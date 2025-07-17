@@ -1,0 +1,113 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+*.pyc
+__pycache__/
+
+# Arquivos de configuração do PyCharm
+.idea/
+
+# Arquivos do VSCode
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Banco de dados SQLite
+*.sqlite3
+*.db
+
+# Mídias carregadas
+/media/
+media/
+uploads/
+
+# Arquivos de migração não versionados (opcional — geralmente é melhor versionar)
+# */migrations/*.pyc
+# */migrations/__pycache__/
+# */migrations/*.py
+
+# Arquivos de log
+*.log
+
+# Arquivos de cache
+*.cache
+*.pot
+*.mo
+
+# Arquivos de testes
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# Arquivos do pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos de distribuição
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Arquivos de wheel
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Armazenamento temporário do Django
+staticfiles/
+static/
+
+# Config do Jupyter (caso use notebooks)
+.ipynb_checkpoints
+
+# Arquivos dotenv (senhas, chaves, variáveis secretas)
+.env
+.env.*
+
+# Arquivos do Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Arquivos do mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Arquivos de debug
+debug.log
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+
+# Arquivos de testes de segurança (bandit, etc)
+.bandit/
+
+# Arquivos do Pyre
+.pyre/
+
+# Config do Docker (se estiver usando)
+*.pid
+docker-compose.override.yml
+
+# Arquivos de backup
+*.bak
+*.old
+*.orig
+

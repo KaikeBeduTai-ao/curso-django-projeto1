@@ -1,0 +1,58 @@
+# 🚀 CONFIGURAÇÃO INICIAL DE AMBIENTE E PROJETO DJANGO COM GIT
+
+# 📦 Instala os pacotes essenciais do Python (atualiza pip, setuptools e wheel)
+python -m pip install --upgrade pip setuptools wheel
+
+# 🧪 Cria e ativa um ambiente virtual
+python -m venv venv
+source venv/bin/activate   # (Linux/macOS)
+# .\venv\Scripts\activate   # (Windows, se necessário)
+
+# ⚙️ Instala o Django dentro do ambiente virtual
+pip install django
+
+# 📌 Verifica a versão instalada do Django
+django-admin --version
+
+
+# 🔧 CONFIGURAÇÃO GLOBAL DO GIT
+
+git config --global user.name "Kaike Beduschi Tai ao"
+git config --global user.email "kkbeduschitaiao@gmail.com"
+git config --global init.defaultBranch main
+
+
+# 🗂️ INICIALIZAÇÃO DO REPOSITÓRIO GIT
+
+git init  # inicia o repositório local
+
+
+# 🔐 CONFIGURAÇÃO DE CHAVE SSH (usada para autenticar com o GitHub)
+
+ssh-keygen  # gera os arquivos: ~/.ssh/id_rsa e ~/.ssh/id_rsa.pub
+
+# Copie o conteúdo da chave pública para adicionar ao GitHub:
+cat ~/.ssh/id_rsa.pub
+
+# Vá até: GitHub > Settings > SSH and GPG keys > New SSH key
+# Cole o conteúdo copiado lá.
+
+
+# 🔗 CONECTANDO O PROJETO LOCAL AO REPOSITÓRIO REMOTO NO GITHUB
+
+git remote add origin git@github.com:KaikeBeduTai-ao/curso-django-projeto1.git
+git remote -v  # verifica se o link foi adicionado corretamente
+
+
+# 📝 ABRINDO O PROJETO NO VS CODE
+code .   # abre o diretório atual no VS Code
+
+
+# 🔍 VERIFICANDO O STATUS DO REPOSITÓRIO
+git status  # mostra os arquivos modificados, novos ou não rastreados
+
+
+# 🚀 PRIMEIRO PUSH PARA O GITHUB
+git push --set-upstream origin main  
+# envia o projeto local para o repositório remoto (branch main)
+# e define 'origin/main' como o upstream padrão
