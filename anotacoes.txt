@@ -1,0 +1,4 @@
+git config --global user.name "KaikeBeduTai-ao"
+git config --global user.email "kkbeduschitaiao@gmail.com"
+
+ssh-keygen
